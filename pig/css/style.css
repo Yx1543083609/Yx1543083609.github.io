@@ -1,0 +1,352 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/*按钮*/
+.swiper-button-next{
+    position: absolute;
+    top:auto;
+    bottom:2%;
+    left:50%;
+    transform: rotate(-90deg);
+    margin-left:-13.5px;
+}
+/*背景*/
+.swiper-slide{
+    background: url("../img/bg.jpg") no-repeat;
+}
+.swiper-button-next{
+    animation: a 2s linear infinite;
+}
+@keyframes a{
+    from{
+        opacity:1;
+        transform:translate(0,0) rotate(-90deg);
+    }
+    to{
+        opacity:.1;
+        transform:translate(0,-20px) rotate(-90deg);
+    }
+ }
+/*.lind{*/
+    /*animation: auto 0.1s infinite linear;*/
+    /*animation-direction: alternate;*/
+/*}*/
+/*@keyframes auto {*/
+    /*0%{*/
+        /*transform: rotate(-10deg);*/
+    /*}*/
+    /*50%{*/
+        /*transform: rotate(0deg);*/
+    /*}*/
+    /*100%{*/
+        /*transform: rotate(10deg);*/
+    /*}*/
+/*}*/
+
+/*music*/
+.musicoff{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    right:0;
+}
+.music{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 3;
+    top: 20px;
+    right: 20px;
+    animation: cube 3s infinite linear;
+}
+@keyframes cube {
+    100%{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg)
+    }
+}
+/*.ling{*/
+    /*animation: ling 1s infinite linear;*/
+/*}*/
+/*@keyframes ling{*/
+    /*0%{*/
+        /*transform: scale(0.5);*/
+    /*}*/
+    /*25%{*/
+        /*transform: scale(0.75);*/
+    /*}*/
+    /*50%{*/
+        /*transform: scale(1);*/
+    /*}*/
+    /*75%{*/
+        /*transform: scale(0.75);*/
+    /*}*/
+    /*100%{*/
+        /*transform: scale(0.5);*/
+    /*}*/
+/*}*/
+.col-md-6{
+    width:50%;
+    float: left;
+}
+.col-md-4{
+    width:30%;
+    float: left;
+    margin-left: 2%;
+    margin-right: 1%;
+}
+.s1tu1{
+    margin-left: auto;
+    margin-right:auto;
+    position: absolute;
+    left:10%;
+}
+h2{
+    color: #ffffff;
+}
+.s1tu3{
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: auto;
+    right:auto;
+}
+.s1tu4{
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: auto;
+    right:auto;
+}
+.s1tu5{
+    position: absolute;
+    left:0;
+}
+.duihuakuang{
+    width: 80%;
+}
+.juese{
+    width: 20%;
+}
+.s1tu6{
+    position: absolute;
+    right:0;
+}
+.s1tu7{
+    position: absolute;
+    left:0;
+}
+.s1tu8{
+    position: absolute;
+    right:0;
+}
+.s2ding{
+    position: absolute;
+    bottom:40%;
+}
+.s2tu{
+    position: absolute;
+    bottom:0;
+}
+.span1{
+    font-size: 40px;
+    color: orange;
+    display: block;
+    float: left;
+}
+.span2{
+    float: left;
+    color: #ffffff;
+    display: block;
+    font-size: 40px;
+}
+.span3{
+    float: left;
+    display: block;
+    font-size: 40px;
+}
+.span4{
+    font-size: 40px;
+    color: red;
+    display: block;
+    float: left;
+}
+.span5{
+    float: left;
+    color: #ffffff;
+    display: block;
+    font-size: 40px;
+}
+.span6{
+    float: left;
+    display: block;
+    color: #000000;
+    font-size: 40px;
+}
+.s1tu9{
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: auto;
+    right:auto;
+}
+.s1tu9 img{
+    width: 80%;
+}
+.lux{
+    display: block;
+}
+.peiq{
+    display: block;
+}
+.yellow{
+    width:100%;
+    height:100%;
+    background-image: url("../img/bgyellow.jpg");
+}
+.yellow .s3img1{
+    position: absolute;
+    left:0;
+    top:49%;
+    width:60%;
+}
+.yellow .s3img2{
+    position: absolute;
+    right: 2%;
+    top:50%;
+    width:10%;
+    height: 50%;
+}
+.yellow .s3img3{
+    position: absolute;
+    right:0;
+    top:55%;
+    width:40%;
+}
+.yellow .ziti{
+    position: absolute;
+    top: 34%;
+    left: 12%;
+}
+.yellow .zi_xiao{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.yellow .zi_zhu{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.yellow .zi_pei{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.yellow .zi_qi{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.logo{
+    margin-top: 20px;
+}
+.an{
+    width:80%;
+    background:rgba(0,0,0,0.6);
+    color: #9cc4f7;
+    padding:10px;
+}
+.s4-zi{
+    position: absolute;
+    top:20%;
+    width: 80%;
+}
+.s4-zi p{
+    color: #ffffff;
+}
+.s4-tu{
+    position: absolute;
+    top:50%;
+}
+.s6{
+    width:80%;
+    position: absolute;
+    top:30%;
+}
+.s6 p{
+    color: #ffffff;
+}
+.waizhu{
+    position: absolute;
+    top:30%;
+}
+.waizhudi{
+    position: absolute;
+    top:30%;
+}
+.waizhuba{
+    position: absolute;
+    top:30%;
+}
+.waizhuma{
+    position: absolute;
+    top:30%;
+}
+.s6zhuzhuba{
+    position: absolute;
+    left:0;
+    width: 50%;
+}
+.s6zhumazhudi{
+    position: absolute;
+    right:0;
+    width: 50%;
+}
+.s7{
+    color: #9cc4f7;
+    background:rgba(0,0,0,0.5);
+    width:80%;
+    padding:50px 20px;
+}
+.s8{
+    color: #ffffff;
+    width: 80%;
+    position: absolute;
+    top:20%;
+}
+.s8tu{
+    position: absolute;
+    top:55%;
+}
